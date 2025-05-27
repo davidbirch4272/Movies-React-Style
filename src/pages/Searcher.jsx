@@ -5,15 +5,11 @@ import Selector from '../Components/Selector';
 
 function Searcher() {
   return (
-    <div className="page__container"> 
+    <div> 
       <Nav />
-    <Selector />
-      <main className="content__wrap">
-      </main>
-      <footer className="footer">
-        Copyright &copy; 2025 David P. Birch. All Rights Reserved.
-      </footer>
-       </div>
+      <Selector />
+      <Footer />      
+    </div>
   )
 };
 

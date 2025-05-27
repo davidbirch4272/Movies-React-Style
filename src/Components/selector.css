@@ -1,6 +1,6 @@
    .container {
     padding: 8px 0;
-    height: 1200px;
+    height: 432px;
 
    }
     .row {
@@ -10,28 +10,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 1199px;
     
    }
-
-   .page__container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    }
-
-    .content__wrap {
-        flex: 1;
-        padding: 20px;
-    }
-
-    .footer {
-        background: #222;
-        color: #ffff;
-        text-align: center;
-        padding: 10rem;
-
-    }
 
    .background__picture {
     height: 416px;
@@ -85,6 +65,7 @@
   .selector__row {
   margin: 0 auto;
   width: 100%;
+  max-width: 2400px;
   /*max-width: 1200px;*/
   height: 299vh;
   }
@@ -120,12 +101,14 @@ select {
 .movies__Wrapper {
   display: flex;
   flex-wrap: wrap;
+  
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 24px 24px
 
-  }
+  
+}
 
 .movie {
 padding: 24px 24px;
