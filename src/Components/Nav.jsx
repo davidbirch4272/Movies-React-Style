@@ -1,5 +1,6 @@
 import React from "react";
 import nav from "./nav.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   return (
@@ -12,38 +13,34 @@ function Nav() {
           </div>
           <ul className="nav__links">
             <li>
-              <a
-                href="index.html"
-                className="
+              <Link to="/"
+              className="
               nav__link 
               link__hover-effect
               link__hover-effect--blue"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                className="
+              <Link to="About"
+              className="
               nav__link 
               nav__link--about
               link__hover-effect
               link__hover-effect--blue"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="selector.html"
-                className="
+              <Link to={"./Searcher"}
+              className="
               nav__link 
               link__hover-effect
               link__hover-effect--blue"
-              >
-                Movies
-              </a>
+              >Movies
+              </Link> 
             </li>
           </ul>
           <button className="btn__menu" onClick="openMenu()">
