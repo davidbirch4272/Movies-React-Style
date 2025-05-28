@@ -1,9 +1,24 @@
 import React from "react";
 import nav from "./nav.css";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+
+
+
 
 function Nav() {
-  return (
+
+function openMenu() {
+  document.body.classList += " menu--open"
+  console.log(openMenu)
+}
+
+
+function closeMenu() {
+  document.body.classList.remove('menu--open')
+}
+
+return (
     <>
       <nav>
         <div className="nav__container">
@@ -43,11 +58,11 @@ function Nav() {
               </Link> 
             </li>
           </ul>
-          <button className="btn__menu" onClick="openMenu()">
-            <i className="fas fa-bars"></i>
+          <button className="btn__menu" onClick={openMenu()}>
+            <GiHamburgerMenu />            
           </button>
           <div className="menu__backdrop">
-            <button className="btn__menu btn__menu--close" onClick="closeMenu()">
+            <button className="btn__menu btn__menu--close" onClick={closeMenu()}>
               <i className="fas fa-times"></i>
             </button>
             <ul
@@ -56,40 +71,38 @@ function Nav() {
             "
             >
               <li className="menu__list">
-                <a
-                  href="index.html"
-                  className="
+                <Link to="/"
+                className="
                 menu__link
                 menu__hover-effect
                 menu__hover-effect--white"
-                  onclick="closeMenu()"
+                  onclick={closeMenu()}
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="menu__list">
-                <a
-                  className="
+                <Link to="About"
+                className="
                 menu__link
                 menu__link--about
                 menu__hover-effect
                 menu__hover-effect--white"
-                  onclick="closeMenu()"
+                  onclick={closeMenu()}
                 >
                   About
-                </a>
+                </Link>
               </li>
               <li className="menu__list">
-                <a
-                  href="selector.html"
-                  className="
+                <Link to={"./Searcher"}
+                className="
                 menu__link
                 menu__hover-effect
                 menu__hover-effect--white"
-                  onclick="closeMenu()"
+                  onclick={closeMenu()}
                 >
                   Movies
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

@@ -56,8 +56,9 @@
 /* Movies HTML */
 
 .selector__container {
-  padding: 8px 104px;  
-  height: 300vh;
+  padding: 8px 0;  
+  min-height: 5vh;
+  height: 480vh;
 
   /* Here */
 
@@ -67,7 +68,8 @@
   width: 100%;
   max-width: 1200px;
   /*max-width: 1200px;*/
-  height: 299vh;
+  min-height: 4vh;
+  height: 479vh;
   }
 
 
@@ -136,3 +138,50 @@ margin-bottom: 8px;
 margin-top: 8px;
 }
 
+/* SMALL PHONES, LARGE SMARTPHONES  */ 
+@media (max-width: 700px) {   
+
+ .selector__container {
+    height: 691vh;
+
+  /* Here */
+
+ }
+  .selector__row {
+    height: 690vh;
+  }
+
+  .movie {
+    width: calc(100%/2);
+  }
+
+
+}
+
+/* SMALL PHONES, LARGE SMARTPHONES  */ 
+@media (max-width: 575px) {   
+
+.selector__container {
+    height: 1250vh;
+
+  /* Here */
+
+ }
+  .selector__row {
+    height: 1249vh;
+  }
+
+  .movies__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav__link {
+  display: none;
+}
+
+.movie {
+  width: 100%;
+}
+
+}

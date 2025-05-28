@@ -230,3 +230,39 @@
     left: 0;
     width: 100%;
 }
+
+
+/* SMALL PHONES, LARGE SMARTPHONES  */ 
+@media (max-width: 1235px) {   
+  .nav__container { 
+    padding:  8px 28px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+
+  }
+
+
+  /* SMALL PHONES, LARGE SMARTPHONES  */ 
+@media (max-width: 700px) {   
+
+  .title {
+    font-size: 18px;
+  }
+
+
+  }
+
+/* SMALL PHONES, LARGE SMARTPHONES  */ 
+@media (max-width: 575px) {   
+
+.btn__menu {
+display: block;
+}
+
+
+}
+

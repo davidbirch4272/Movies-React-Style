@@ -62,7 +62,7 @@ function Selector() {
     <div className="selector__container">
       <div className="selector__row">
         <div className="movies__header">
-          <h2>
+          <h2> 
             🎬 All <span className="coloring">Movies</span>
           </h2>
 

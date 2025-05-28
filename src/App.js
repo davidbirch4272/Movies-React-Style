@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Landing from './pages/Landing';
 import Searcher from './pages/Searcher';
 import { useParams, useNavigate } from "react-router-dom";
-
+  
 function App() {
   return (
     <Router>
