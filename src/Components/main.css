@@ -1,6 +1,6 @@
 .container {
   padding: 8px 0;
-  height: 432px;
+  min-height: 62vh;
 }
 .row {
   margin: 0 auto;
@@ -20,6 +20,10 @@
 @media (max-width: 1235px) {   
   .nav__container { 
     padding:  8px 28px;
+  }
+
+  .container {
+  min-height: 66vh;
   }
 
   }

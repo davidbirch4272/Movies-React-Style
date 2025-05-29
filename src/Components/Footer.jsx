@@ -1,31 +1,36 @@
 import React from "react";
-import footer from './footer.css';
+import footer from "./footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <>
-    <footer>
+      <footer>
         <div className="footer__container">
           <div className="footer__row">
             <div className="footer__logo--container">
               <figure className="footer__logo"></figure>
-              <a href="#">
-                <img src="./movies.gif" className="footer__logo--img" alt="">
-                </img>
-              </a>
+              <Link
+                to="/">
+                <img
+                  src="./movies.gif"
+                  className="footer__logo--img"
+                  alt=""
+                ></img>
+              </Link>
             </div>
             <div className="footer__links">
-              <a
-                href=""
-                className="
+              <Link
+                to="/"
+                className="                           
     footer__link
     link__hover-effect
     link__hover-effect--white"
               >
                 Home
-              </a>
-              <a
-                href=""  //You will have to fix this //
+              </Link>
+              <Link
+                to=""
                 className="
     footer__link 
     footer__link--about
@@ -33,16 +38,16 @@ function Footer() {
     link__hover-effect--white"
               >
                 About
-              </a>
-              <a
-                href="" //You will have to fix this //
+              </Link>
+              <Link
+                to={"./Searcher"}
                 className="
     footer__link
     link__hover-effect
     link__hover-effect--white"
               >
                 Movies
-              </a>
+              </Link>
             </div>
             <div className="footer__copyright">
               Copyright &copy; 2025 David P. Birch. All Rights Reserved.
