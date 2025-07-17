@@ -96,11 +96,17 @@ function Selector() {
         <div className="movies__Wrapper">
           {loading && <p>Loading...</p>}
           {error && <p style={{ color: "red" }}>{error}</p>}
-          {sortedMovies.map((movie) => (
+          {sortedMovies
+            .filter (
+              (movie) => 
+                 typeof movie.poster_path === "string" &&
+          movie.poster_path.trim() !== ""
+            )
+            .map((movie) => (
             <div className="movie" key={movie.id}>
               <img
                 src={
-                  movie.poster_path
+                  movie.poster_path.trim()
                     ? `https://image.tmdb.org/t/p/w200${movie.poster_path}`
                     :  "https://via.placeholder.com/200x300?text=No+Image"
                 }
