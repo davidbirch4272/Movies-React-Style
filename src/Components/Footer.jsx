@@ -15,7 +15,7 @@ function Footer() {
                 <img
                   src="/movies.gif"
                   className="footer__logo--img"
-                  alt="logo"
+                  alt=""
                 ></img>
               </Link>
             </div>

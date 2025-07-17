@@ -22,7 +22,7 @@ return (
         <div className="nav__container">
           <div className="logo__container">
             <Link to="/">
-            <img className="logo" src="/movies.gif" alt="logo"></img>
+            <img className="logo" src="/movies.gif" alt=""></img>
             </Link>
             <h1 className="title">David's Theater</h1>
           </div>
