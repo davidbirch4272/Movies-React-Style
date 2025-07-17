@@ -33,10 +33,13 @@ function Selector() {
       );
 
       setMovies(response.data.results || []);
+    
+      setTimeout (() => {
+      setLoading(false);
+    }, 1500);    
     } catch (err) {
       console.error(err);
       setError(err.response?.data?.status_message || "Failed to fetch movies.");
-    } finally {
       setLoading(false);
     }
   };
@@ -94,9 +97,12 @@ function Selector() {
           </div>
         </div>
         <div className="movies__Wrapper">
-          {loading && <p>Loading...</p>}
-          {error && <p style={{ color: "red" }}>{error}</p>}
-          {sortedMovies
+          {loading ? (
+          <p>Loading...</p>
+          ) : error ? (
+          <p style={{ color: "red" }}>{error}</p>
+          ) : (
+          sortedMovies
             .filter (
               (movie) => 
                  typeof movie.poster_path === "string" &&
@@ -119,7 +125,8 @@ function Selector() {
               </p>
               <p className="movie__imdbID">ID: {movie.id}</p>
             </div>
-          ))}
+          ))
+        )}
         </div>
       </div>
     </div>
