@@ -13,7 +13,7 @@ function Footer() {
               <Link
                 to="/">
                 <img
-                  src="./movies.gif"
+                  src="/movies.gif"
                   className="footer__logo--img"
                   alt=""
                 ></img>
